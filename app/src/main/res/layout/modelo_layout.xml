@@ -4,17 +4,48 @@
     android:layout_height="250dp"
     android:orientation="horizontal">
 
+
     <ImageView
         android:layout_width="169dp"
+        android:id="@+id/imgFilmes"
         android:layout_height="match_parent"
-        android:src="@drawable/filmeUm"/>
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/filmeUm" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Filme: 2067"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2067"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/idTituloFilmes"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Terra está à beira da extinção. Após anos de mudança climática, a vida vegetal desapareceu e o oxigênio tornou-se escasso."
+            android:textColor="#000"
+            android:id="@+id/idDescricaoFilmes"
+            android:textSize="12sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_favorite"
+                android:layout_alignParentRight="true"
+                android:id="@+id/acessoFilme"/>
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
